@@ -1,3 +1,3 @@
 Luis Rosas' Repo
 
-For python projects.
+For python and snowflake projects.
