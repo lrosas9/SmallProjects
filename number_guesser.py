@@ -3,8 +3,6 @@ import random
 #r = random.randrange(-5, 11)
 top_range = input("Type a number: ")
 
-
-
 if top_range.isdigit():
     top_range = int(top_range)
 
@@ -14,7 +12,6 @@ if top_range.isdigit():
 else:
     print("Please type a number next time")
     quit()
-
 
 random_number = random.randint(0, top_range)
 guesses = 0
