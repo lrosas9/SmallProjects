@@ -51,7 +51,7 @@ def find_path(maze,stdscr):
 
         stdscr.clear()
         print_maze(maze, stdscr, path) 
-	time.sleep(0.2)
+        time.sleep(1)
         stdscr.refresh()
 
         if maze[row][col] == end:
@@ -61,13 +61,13 @@ def find_path(maze,stdscr):
             if neighbor in visited:
                 continue
 
-        r, c = neighbor
-        if maze[r][c] == "#":
-            continue
+            r, c = neighbor
+            if maze[r][c] == "#":
+                continue
 
-        new_path = path + [neighbor]
-        q.put((neighbor, new_path))
-	visited.add(neighbor)
+            new_path = path + [neighbor]
+            q.put((neighbor, new_path))
+            visited.add(neighbor)
 
 
 def find_neighbors(maze, row, col):
