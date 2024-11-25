@@ -8,8 +8,8 @@ def login():
 
 @auth.route('/logout')
 def logout():
-    return "<p>Login</p>"
+    return "<p>Logout</p>"
 
 @auth.route('/sign-up')
 def sign_up():
-        return "<p>Login</p>"
+        return "<p>Sign-up</p>"
